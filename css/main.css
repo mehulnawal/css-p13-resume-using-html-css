@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: burlywood;
+}
+
+::selection {
+  background-color: burlywood;
+}
+
+body {
+  background-color: #F4F4F4;
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.about,
+.project,
+.education,
+.contact {
+  margin-top: 15px;
+}
+
+.home-inner,
+.about-inner,
+.project-inner,
+.education-inner,
+.contact {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.about-inner h2,
+.project-inner h2,
+.education-inner h2,
+.contact-inner h2 {
+  color: #46A44A;
+  font-size: 30px;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #46A44A;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+.navbar a,
+.navbar i {
+  color: white;
+}
+.navbar nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar nav ul li {
+  margin-left: 40px;
+  font-weight: 700;
+}
+.navbar nav ul a {
+  margin-left: 10px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.navbar nav ul a::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  transition: all 0.4s ease-in-out;
+}
+.navbar nav ul a:hover::before {
+  width: 100%;
+}
+
+.home {
+  margin-top: 70px;
+}
+
+.home-inner img {
+  width: 150px;
+  border: 7px solid #46A44A;
+  border-radius: 50%;
+}
+.home-inner h1 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.home-inner h1::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 50%;
+  height: 3px;
+  background-color: black;
+  transition: all 0.4s ease-in-out;
+}
+.home-inner h1:hover::before {
+  width: 100%;
+}
+.home-inner h1,
+.home-inner h3 {
+  margin-top: 20px;
+}
+.home-inner h3 {
+  font-weight: 500;
+}
+
+.about-inner {
+  font-weight: 700;
+}
+
+.about-icons a {
+  color: #333333;
+  font-weight: 500;
+}
+.about-icons a i {
+  margin-top: 10px;
+  font-size: 23px;
+  margin-left: 10px;
+  padding: 6px;
+  border-radius: 50%;
+}
+.about-icons a i:hover {
+  background-color: #46A44A;
+  color: white;
+}
+
+.about-inner p {
+  margin-top: 20px;
+}
+
+#about-inner-p1 {
+  font-size: 18px;
+}
+
+.project-inner p {
+  margin-top: 20px;
+  font-size: 21px;
+  color: #333333;
+  font-weight: 500;
+}
+.project-inner .pi1 {
+  margin-top: 20px;
+  display: flex;
+  border-radius: 20px;
+}
+.project-inner .pi1 div {
+  margin-left: 20px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.project-inner .pi1 div a {
+  font-size: 20px;
+  color: blue;
+  font-weight: 500;
+}
+.project-inner .pi1 div a:hover {
+  text-decoration: underline;
+  text-decoration-color: #333333;
+}
+.project-inner .pi1 div img {
+  transition: all 0.4s ease-in-out;
+  border-radius: 20px;
+  margin-bottom: 3px;
+}
+.project-inner .pi1 div img:hover {
+  scale: 1.1;
+}
+
+.education-inner p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 500;
+}/*# sourceMappingURL=main.css.map */
